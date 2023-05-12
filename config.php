@@ -19,11 +19,12 @@ $CFG->dboptions = array (
 
 $CFG->wwwroot   = getenv('WWWROOT');
 $CFG->dataroot  = getenv('DATAROOT');
+$CFG->langotherroot = __DIR__ . '/lang/';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
 
- $CFG->sslproxy = true;
+$CFG->sslproxy = true;
 
 require_once(__DIR__ . '/lib/setup.php');
 
